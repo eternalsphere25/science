@@ -13,8 +13,8 @@ def convert_to_scientific_notation(input_number):
 
 #np.seterr(divide='ignore', invalid='ignore')
 
-y_axis_title = ['Patch Width(m)']
-x_axis_title = ['Patch Length (m)']
+y_axis_title = ['Width(m)']
+x_axis_title = ['Length (m)']
 graph_title = ['Electric Field Map']
 
 #lengths in cm
@@ -110,7 +110,8 @@ mpl.rcParams['font.family'] = 'sans-serif'
 mpl.rcParams['font.sans-serif'] = ['Tahoma']
 
 #Generate figure object, axes object(s) and set size
-fig, ax = plt.subplots(figsize=(6,4.8))
+#fig, ax = plt.subplots(figsize=(6,4.8))
+fig,ax = plt.subplots(figsize=(20,16))
 
 #Generate each individual axis object
 #X and Y are for the grid
